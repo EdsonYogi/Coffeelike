@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../Coffeelike/images/bg.jpg");
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+}
+
+p {
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    margin-top: 100px;
+}
+
+.menu h1 {
+    color: White;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 2px 1px #32251B;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: black;
+}
+
+.content-main {
+    display: flex;
+}
+
+.list-link {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 40px;
+    margin-top: 75px;
+}
+
+.list-link h1, p, li {
+    padding: 15px 0;
+}
+
+.list-link p {
+    line-height: 25px;
+    color: #e1d2c7;
+    font-size: 17px;
+}
+
+.list-link li {
+    border: 1px;
+    border-bottom-style: dotted;
+    color: #e1d2c7;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.list-link .no-border {
+    border: 0;
+}
+
+.list-link li:hover {
+    text-decoration: none;
+}
+
+.content {
+    width: 70%;
+    background-color: white;
+    padding: 40px;
+    margin: 75px 0 0 30px;
+}
+
+.content-one h1 {
+    padding: 15px 0 30px 0;
+    font-size: 30px;
+}
+
+.sub-content {
+    display: flex;
+}
+
+.sub-content p {
+    padding: 0 0 0 20px;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.content-bottom {
+    display: flex;
+    padding: 60px 0 15px 0;
+    border: 0;
+}
+
+.content-two {
+    width: 50%;
+}
+
+.content-two img {
+    width: 80px;
+    height: 80px;
+}
+
+.content-two .sub-content {
+    border: 1px;
+    border-bottom-style: dotted;
+    padding: 15px 0;
+}
+
+.content-two .no-border {
+    border: 0;
+}
+
+.content-three {
+    width: 50%;
+    padding-left: 35px;
+}
+
+.content-three li {
+    border: 1px;
+    border-bottom-style: dotted;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.content-three .no-border {
+    border: 0;
+}
+
+.content-three li:hover {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    
+    .menu h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu ul {
+        margin: 50px 0 20px 0;
+        width: 100%;
+        display: flex;
+    }
+    
+    .menu li {
+        margin:0 auto;
+    }
+    
+    .content-main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .list-link {
+        width: 100%;
+        padding: 30px;
+        margin-top: 10px;
+    }
+        
+    .content {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        text-align: center;
+        line-height: 5px;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+            
+    .content-one .sub-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-one .sub-content img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content-one .sub-content p {
+        padding: 20px 0 0 0;
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    .content-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-two {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-two img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content-three {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+
+    footer p {
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+}
